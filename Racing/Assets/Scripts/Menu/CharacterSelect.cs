@@ -6,12 +6,13 @@ public class CharacterSelect : MonoBehaviour {
 
     public GameObject[] characters;
     public GameObject selectedCharacter;
+    public int selectedIndex;
     
     RaycastHit hit;
 
 	void Start () 
     {
-	
+        selectedIndex = -1;
 	}
 	
 	void Update () 
@@ -24,14 +25,18 @@ public class CharacterSelect : MonoBehaviour {
                 for (int i = 0; i < characters.Length; i++)
                 {
                     //Checks what gameobject the ray is colliding with
-                    if(hit.collider.gameObject == characters[i])
+                    if (hit.collider.gameObject == characters[i])
                     {
                         //Sets selected character
                         selectedCharacter = characters[i];
+                        selectedIndex = i;
+                        PlayerPrefs.SetInt("selectedPlayer", selectedIndex);
                     }
                 }
             }
-            Debug.Log("Currently selected: " + selectedCharacter);
+            else
+                return;
+            Debug.Log("Currently selected: " + selectedCharacter + "\nAt index: " + selectedIndex);
         }
 
 	}

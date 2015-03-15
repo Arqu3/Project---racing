@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Checkpoint.cs" />
      <Compile Include="Assets\Scripts\DisableRenderer.cs" />
      <Compile Include="Assets\Scripts\Menu\CharacterSelect.cs" />
+     <Compile Include="Assets\Scripts\SpawnPlayer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

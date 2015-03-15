@@ -1,8 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-vs", "Assembly-CSharp-vs.csproj", "{B32525F9-3CED-DCA1-8D86-05047E283309}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{CCCB415E-6E81-D330-3A19-FDF10E6C68B8}") = "Racing", "Assembly-CSharp-vs.csproj", "{B32525F9-3CED-DCA1-8D86-05047E283309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,16 +17,17 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+									GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
-		$0.TextStylePolicy = $3
+		$0.TextStylePolicy = $1
 		$1.inheritsSet = null
 		$1.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $2
 		$2.inheritsSet = Mono
 		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
 		$3.FileWidth = 120
 		$3.TabWidth = 4
 		$3.IndentWidth = 4
@@ -36,4 +36,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal
