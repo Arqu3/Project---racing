@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CharacterSelect : MonoBehaviour {
 
@@ -7,6 +8,8 @@ public class CharacterSelect : MonoBehaviour {
     public GameObject[] characters;
     public GameObject selectedCharacter;
     public int selectedIndex;
+    public Text selectedCharacterText;
+    public GameObject startButton;
     
     RaycastHit hit;
 
@@ -39,5 +42,20 @@ public class CharacterSelect : MonoBehaviour {
             Debug.Log("Currently selected: " + selectedCharacter + "\nAt index: " + selectedIndex);
         }
 
+        if (selectedCharacter == null)
+        {
+            //Disbales text and button if no character is selected
+            selectedCharacterText.enabled = false;
+            startButton.SetActive(false);
+        }
+        else
+        {
+            //Enables button
+            startButton.SetActive(true);
+            //Enables text, sets it on a relative position to the selected character and displays that characters name
+            selectedCharacterText.enabled = true;
+            selectedCharacterText.text = "" + selectedCharacter.name;
+            selectedCharacterText.rectTransform.anchoredPosition = new Vector2(selectedCharacter.transform.position.x * characters.Length * 13, 30);
+        }
 	}
 }

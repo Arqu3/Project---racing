@@ -20,7 +20,7 @@ public class SpawnPlayer : MonoBehaviour {
             }
             else
                 players[i].SetActive(true);
-            
         }
+        //Instantiate(players[savedPlayer], new Vector3(0, 1, 0), Quaternion.identity);
     }
 }
