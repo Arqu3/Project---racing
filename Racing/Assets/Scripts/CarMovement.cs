@@ -11,12 +11,12 @@ public class CarMovement : MonoBehaviour {
     float turnInput;
     Rigidbody myRigidbody;
 
-	void Start () 
+	void Start() 
     {
         myRigidbody = GetComponent<Rigidbody>();
 	}
 	
-	void Update () 
+	void Update() 
     {
         powerInput = Input.GetAxis("Vertical");
         turnInput = Input.GetAxis("Horizontal");
