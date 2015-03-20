@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Checkpoint : MonoBehaviour {
 
+    public int ID = 0;
     static Transform playerTransform;
 
 	void Start () 
