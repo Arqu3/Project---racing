@@ -37,7 +37,7 @@ public class Checkpoint : MonoBehaviour {
                     CarCheckpoint.current = 0;
             }
         }
-        Debug.Log("Checkpoint: " + CarCheckpoint.current);
+        Debug.Log("Next checkpoint: " + CarCheckpoint.current);
         Debug.Log("Lap: " + CarCheckpoint.lap);
     }
 }
